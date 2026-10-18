@@ -1,0 +1,87 @@
+[
+  {
+    "name": "desktop",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "layout": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 8311
+    },
+    "imagesLoaded": 8,
+    "imagesTotal": 8,
+    "projects": 3,
+    "backdropFilter": "blur(34px) saturate(1.85)",
+    "errors": []
+  },
+  {
+    "name": "desktop-motion",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "layout": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 8311
+    },
+    "imagesLoaded": 8,
+    "imagesTotal": 8,
+    "projects": 3,
+    "backdropFilter": "blur(34px) saturate(1.85)",
+    "errors": []
+  },
+  {
+    "name": "tablet",
+    "viewport": [
+      768,
+      1024
+    ],
+    "layout": {
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "scrollHeight": 6602
+    },
+    "imagesLoaded": 8,
+    "imagesTotal": 8,
+    "projects": 3,
+    "backdropFilter": "blur(34px) saturate(1.85)",
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "viewport": [
+      390,
+      844
+    ],
+    "layout": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 8472
+    },
+    "imagesLoaded": 8,
+    "imagesTotal": 8,
+    "projects": 3,
+    "backdropFilter": "blur(34px) saturate(1.85)",
+    "errors": []
+  },
+  {
+    "name": "small-mobile",
+    "viewport": [
+      360,
+      800
+    ],
+    "layout": {
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "scrollHeight": 8618
+    },
+    "imagesLoaded": 8,
+    "imagesTotal": 8,
+    "projects": 3,
+    "backdropFilter": "blur(34px) saturate(1.85)",
+    "errors": []
+  }
+]

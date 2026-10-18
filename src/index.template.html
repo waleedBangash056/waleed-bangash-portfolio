@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f0f2e8" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="{{HERO_SUMMARY}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{DISPLAY_NAME}} — {{ROLE}}" />
+    <meta property="og:description" content="{{HERO_SUMMARY}}" />
+    <title>{{DISPLAY_NAME}} — {{ROLE}}</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=3" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=3" />
+    <link rel="shortcut icon" href="/assets/favicon.ico?v=3" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=3" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="/styles/site.css" />
+    <script type="module" src="/app/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="scene-stage" id="scene-stage" aria-hidden="true" data-live="false">
+      <img class="scene-artwork" id="scene-artwork" src="/assets/signature-sculpture.webp" width="850" height="1134" alt="" fetchpriority="high" decoding="async" />
+    </div>
+
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#top" aria-label="{{DISPLAY_NAME}} — home">
+        <img class="brand-mark" src="/assets/favicon.svg?v=3" width="36" height="36" alt="" aria-hidden="true" />
+        <span class="brand-wordmark">Waleed<span>Bangash</span></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#approach">Approach</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" aria-label="Pause motion effects">
+        <span class="motion-icon" aria-hidden="true"><i></i><i></i></span>
+        <span class="motion-label">Pause motion</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="chapter hero" id="top" aria-labelledby="hero-title" data-chapter="arrival">
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-content content-wrap">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Independent web development / portfolio 2026</p>
+            <h1 id="hero-title">{{DISPLAY_NAME}}<span class="hero-period">.</span></h1>
+            <p class="hero-role">{{ROLE}}</p>
+            <p class="hero-statement">{{HERO_HEADLINE}}</p>
+            <p class="hero-summary">{{HERO_SUMMARY}}</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
+              <a class="button button-text" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-note"><span class="note-line"></span><span>Independent practice · Built with intent</span></div>
+          </div>
+          <div class="hero-visual" role="group" aria-label="Portrait and sculptural visual signature">
+            <div class="visual-caption visual-caption--top"><span>FORM / FUNCTION</span><span>WB — 026</span></div>
+            <div class="hero-glass-label" aria-hidden="true"><span class="glass-label-spark"></span><span>DESIGN + ENGINEERING</span><b>01—03</b></div>
+            <figure class="portrait-card portrait-card--hero depth-plane" data-depth="hero-portrait">
+              <div class="portrait-frame">
+                <img src="/assets/portrait-800.webp" srcset="/assets/portrait-480.webp 480w, /assets/portrait-800.webp 800w" sizes="(max-width: 640px) 70vw, 310px" width="800" height="1200" alt="Portrait of Waleed Bangash wearing a dark suit and glasses." fetchpriority="high" decoding="async" />
+                <span class="portrait-edge" aria-hidden="true"></span>
+              </div>
+              <figcaption><span>{{DISPLAY_NAME}}</span><span>DEVELOPER / MAKER</span></figcaption>
+            </figure>
+            <div class="visual-index" aria-hidden="true"><span>WB</span><span>SCROLL TO EXPLORE ↓</span></div>
+          </div>
+        </div>
+        <div class="hero-bottom content-wrap" aria-hidden="true">
+          <span>WEB / INTERACTION / SYSTEMS</span>
+          <span class="bottom-mark">A portfolio in progress <span>✳</span></span>
+          <span>01 — 06</span>
+        </div>
+      </section>
+
+      <section class="chapter work-section" id="work" aria-labelledby="work-title" data-chapter="work">
+        <div class="section-heading content-wrap">
+          <div>
+            <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> A few things to explore</p>
+            <h2 id="work-title">Selected <em>work.</em></h2>
+          </div>
+          <p class="section-intro">A mix of website builds and independent concepts. Open each one to inspect the real experience, not an inflated list of claims.</p>
+        </div>
+        <div class="project-list content-wrap">
+          {{PROJECTS_HTML}}
+        </div>
+        <div class="work-footer content-wrap"><span>SELECTED WORK / 03</span><span>Project status is stated plainly. No made-up outcomes.</span></div>
+      </section>
+
+      <section class="chapter capability-section" id="capabilities" aria-labelledby="capabilities-title" data-chapter="capabilities">
+        <div class="content-wrap">
+          <div class="capability-intro glass-story-panel" data-reveal>
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> What I build</p>
+            <h2 id="capabilities-title">Good design should <em>do something.</em></h2>
+            <p>Visual craft matters most when it helps a person understand, choose, or get something done.</p>
+          </div>
+          <div class="capability-list">
+            <article class="capability-item glass-story-card" data-pillar="01" data-reveal>
+              <span class="capability-index">01 / INTERFACES</span>
+              <h3>Web experiences</h3>
+              <p>Responsive websites with a deliberate visual hierarchy, clear navigation, and content that works across screen sizes.</p>
+              <span class="capability-arrow" aria-hidden="true">↘</span>
+            </article>
+            <article class="capability-item glass-story-card" data-pillar="02" data-reveal>
+              <span class="capability-index">02 / MOTION</span>
+              <h3>Interactive product stories</h3>
+              <p>Purposeful transitions, scroll-led narratives, and real-time visuals when motion makes an idea easier to feel or understand.</p>
+              <span class="capability-arrow" aria-hidden="true">↘</span>
+            </article>
+            <article class="capability-item glass-story-card" data-pillar="03" data-reveal>
+              <span class="capability-index">03 / FUNCTION</span>
+              <h3>Practical web applications</h3>
+              <p>Readable interfaces and useful flows shaped around a real task, not interaction for interaction’s sake.</p>
+              <span class="capability-arrow" aria-hidden="true">↘</span>
+            </article>
+          </div>
+          <div class="capability-baseline"><span>LESS NOISE. MORE PURPOSE.</span><span class="baseline-orbit" aria-hidden="true">✳</span></div>
+        </div>
+      </section>
+
+      <section class="chapter approach-section" id="approach" aria-labelledby="approach-title" data-chapter="approach">
+        <div class="content-wrap">
+          <div class="approach-header" data-reveal>
+            <div><p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> A considered process</p><h2 id="approach-title">From first question<br />to <em>final detail.</em></h2></div>
+            <p class="section-intro">A simple sequence keeps the work grounded: understand what matters, shape the experience, then refine the details that make it usable.</p>
+          </div>
+          <div class="process-track" id="process-track" role="group" aria-label="Four stages of the approach">
+            <div class="process-line" aria-hidden="true"><span class="process-line-fill" id="process-line-fill"></span></div>
+            <article class="process-step glass-story-card is-active" data-step="0" data-reveal><div class="step-node"><span>01</span></div><p class="step-kicker">GET CLARITY</p><h3>Discover</h3><p>Clarify the goal, audience, content, and constraints.</p></article>
+            <article class="process-step glass-story-card" data-step="1" data-reveal><div class="step-node"><span>02</span></div><p class="step-kicker">MAKE A MAP</p><h3>Structure</h3><p>Organize the information and define the key paths.</p></article>
+            <article class="process-step glass-story-card" data-step="2" data-reveal><div class="step-node"><span>03</span></div><p class="step-kicker">BRING IT TO LIFE</p><h3>Build</h3><p>Implement responsive components and justified interaction.</p></article>
+            <article class="process-step glass-story-card" data-step="3" data-reveal><div class="step-node"><span>04</span></div><p class="step-kicker">CHECK THE DETAILS</p><h3>Refine</h3><p>Verify accessibility, performance, responsiveness, and content.</p></article>
+          </div>
+          <div class="approach-note"><span class="note-star" aria-hidden="true">✳</span><p>Thoughtful by default. Measured where it counts. No effect without a reason.</p></div>
+        </div>
+      </section>
+
+      <section class="chapter about-section" id="about" aria-labelledby="about-title" data-chapter="about">
+        <div class="content-wrap about-layout" data-reveal>
+          <div class="about-visual">
+            <div class="about-material-stamp" aria-hidden="true"><span>WB</span><small>DESIGN / ENGINEERING</small><b>26</b></div>
+            <figure class="portrait-card portrait-card--about depth-plane" data-depth="about-portrait">
+              <div class="portrait-frame"><img src="/assets/portrait-800.webp" width="800" height="1200" alt="A second portrait of Waleed Bangash, shown in a quieter editorial treatment." loading="lazy" decoding="async" /></div>
+              <figcaption><span>{{DISPLAY_NAME}}</span><span>DESIGN / ENGINEERING</span></figcaption>
+            </figure>
+            <span class="about-coordinate" aria-hidden="true">33° 41′ N / OPEN TO IDEAS</span>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> A little context</p>
+            <h2 id="about-title">Curious about the <em>how</em> and the <em>why.</em></h2>
+            <p>{{ABOUT_COPY}}</p>
+            <p class="about-signature">Clear thinking. Considered craft. Useful outcomes.</p>
+            <a class="text-link text-link-light" href="{{GITHUB_URL}}" target="_blank" rel="noreferrer">Explore my code <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter contact-section" id="contact" aria-labelledby="contact-title" data-chapter="contact">
+        <div class="contact-glass-panel" aria-hidden="true"><span>OPEN CHANNEL</span><strong>Let’s talk.</strong><i>EMAIL / WHATSAPP</i></div>
+        <div class="content-wrap contact-content" data-reveal>
+          <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Bring a good question</p>
+          <h2 id="contact-title">Have an idea?<br /><em>Let’s give it shape.</em></h2>
+          <p class="contact-intro">Tell me what you’re working on, what feels stuck, or what you’d like to build next.</p>
+          <div class="contact-actions">
+            <a class="contact-action contact-action-primary" href="{{EMAIL_HREF}}"><span class="action-icon" aria-hidden="true">↗</span><span><small>EMAIL</small><strong>{{EMAIL}}</strong></span></a>
+            <a class="contact-action contact-action-secondary" href="{{WHATSAPP_URL}}" target="_blank" rel="noreferrer"><span class="action-icon" aria-hidden="true">↗</span><span><small>WHATSAPP</small><strong>{{WHATSAPP_DISPLAY}}</strong></span></a>
+          </div>
+          <p class="contact-note"><span aria-hidden="true">✳</span> Your message opens in your chosen app. This site doesn’t store or send messages through a form.</p>
+          <div class="social-row"><span>Find me elsewhere</span><a href="{{GITHUB_URL}}" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="{{LINKEDIN_URL}}" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-chapter="footer">
+      <div class="content-wrap footer-main" data-reveal><a class="brand brand-footer" href="#top" aria-label="Back to top"><img class="brand-mark" src="/assets/favicon.svg?v=3" width="36" height="36" alt="" aria-hidden="true" /><span class="brand-wordmark">Waleed<span>Bangash</span></span></a><p>Made with curiosity, intention, and a little depth.</p><a class="back-top" href="#top">Back to top ↑</a></div>
+      <div class="content-wrap footer-meta" data-reveal><span>© {{YEAR}} {{DISPLAY_NAME}}</span><span>FRONTEND / FULL-STACK / INTERACTION</span><span>Built for the open web.</span></div>
+    </footer>
+
+    <noscript><p class="noscript-note">The page content and contact links remain available without JavaScript. The 3D stage and scroll-linked depth require a modern browser with JavaScript enabled.</p></noscript>
+  </body>
+</html>

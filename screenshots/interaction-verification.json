@@ -1,0 +1,23 @@
+{
+  "menuOpen": {
+    "expanded": "true",
+    "focused": "Work"
+  },
+  "escape": {
+    "expanded": "false",
+    "focusReturned": "menu-toggle"
+  },
+  "motionPause": {
+    "pressed": "true",
+    "dataPaused": "true"
+  },
+  "motionResume": {
+    "pressed": "false",
+    "dataPaused": "false"
+  },
+  "workNavigation": {
+    "hash": "#work",
+    "expanded": "false"
+  },
+  "pageErrors": []
+}

@@ -1,0 +1,81 @@
+{
+  "profile": {
+    "displayName": "Waleed Bangash",
+    "role": "Frontend & Full-Stack Web Developer",
+    "heroHeadline": "Design that draws you in. Engineering that keeps it useful.",
+    "heroSummary": "I build responsive websites and interactive digital experiences, pairing a clear visual point of view with practical engineering.",
+    "aboutCopy": "I’m interested in the point where a strong visual idea becomes a useful interface. My focus is on responsive frontends, purposeful interaction, and the engineering that helps a digital experience stay clear and easy to use.",
+    "email": "wbangash053@gmail.com",
+    "whatsappDigits": "923329275154",
+    "whatsappDisplay": "+92 332 9275154",
+    "whatsappMessage": "Hi Waleed, I'm interested in discussing a website development project.",
+    "github": "https://github.com/waleedBangash056",
+    "linkedin": "https://www.linkedin.com/in/waleed-ahmed-khan-31807b3b1",
+    "productionDomain": ""
+  },
+  "projects": [
+    {
+      "id": "nexora-one",
+      "number": "01",
+      "title": "Nexora One",
+      "category": "Aurelia Living · Furniture & interiors",
+      "status": "Website build",
+      "description": "A premium furniture and interior storefront, organized around curated collections, showroom discovery, and consultation-focused next steps.",
+      "features": [
+        "Curated furniture and living collections",
+        "Showroom and consultation pathways",
+        "Localized showroom information"
+      ],
+      "image": "/assets/nexora-one.webp",
+      "imageSmall": "/assets/nexora-one-640.webp",
+      "imageAlt": "Homepage preview of the furniture and interior storefront associated with the Nexora One project entry.",
+      "demoUrl": "https://nexora-one.onrender.com",
+      "sourceUrl": "",
+      "theme": "nexora",
+      "layout": "wide",
+      "primaryLinkLabel": "Open website"
+    },
+    {
+      "id": "cowboy-burger",
+      "number": "02",
+      "title": "Cowboy Burger",
+      "category": "Interactive food-brand demo",
+      "status": "Interactive demo",
+      "description": "A product-led food-brand experience built around layered storytelling, a bold hero composition, menu exploration, and clear order or visit paths.",
+      "features": [
+        "Product-led hero",
+        "Scroll-led story sections",
+        "Menu and order pathways"
+      ],
+      "image": "/assets/cowboy-burger.webp",
+      "imageSmall": "/assets/cowboy-burger-640.webp",
+      "imageAlt": "Cowboy Burger demo homepage featuring a close-up burger hero and food-brand storytelling.",
+      "demoUrl": "https://cowboy.infinityfree.io",
+      "sourceUrl": "https://github.com/waleedBangash056/arena-cowboy-burger",
+      "theme": "cowboy",
+      "layout": "reverse",
+      "primaryLinkLabel": "Open demo"
+    },
+    {
+      "id": "cafe-aroma",
+      "number": "03",
+      "title": "Café Aroma",
+      "category": "Hospitality website concept",
+      "status": "Independent concept",
+      "description": "A hospitality concept built around warm imagery, a compact menu story, and clear paths to explore the offering or plan a visit.",
+      "features": [
+        "Menu and visit pathways",
+        "Editorial coffee imagery",
+        "Responsive page structure"
+      ],
+      "image": "/assets/cafe-aroma.webp",
+      "imageSmall": "/assets/cafe-aroma-640.webp",
+      "imageAlt": "Café Aroma concept homepage with coffee photography and clear menu and booking actions.",
+      "demoUrl": "https://waleed-cafe.infinityfreeapp.com",
+      "sourceUrl": "",
+      "theme": "cafe",
+      "layout": "split",
+      "primaryLinkLabel": "Open concept"
+    }
+  ]
+}
