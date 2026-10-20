@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="867" viewBox="0 0 1200 867" role="img" aria-labelledby="title desc">
+<title id="title">Smash &amp; Sizzle restaurant demo — editorial cover</title>
+<desc id="desc">A dark, high-end restaurant landing-page artwork with warm amber accents, a layered smash burger illustration, and menu-focused calls to action.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b1411"/><stop offset=".55" stop-color="#2a1511"/><stop offset="1" stop-color="#0d0e0e"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#e85b25" stop-opacity=".45"/><stop offset="1" stop-color="#e85b25" stop-opacity="0"/></radialGradient>
+  <linearGradient id="bun" x1="0" y1="0" x2="0.2" y2="1"><stop stop-color="#f6c77d"/><stop offset=".48" stop-color="#d88b3e"/><stop offset="1" stop-color="#8a3c20"/></linearGradient>
+  <linearGradient id="bunTop" x1="0" y1="0" x2=".35" y2="1"><stop stop-color="#ffdc98"/><stop offset=".38" stop-color="#eaa552"/><stop offset=".8" stop-color="#b75c2b"/><stop offset="1" stop-color="#72351f"/></linearGradient>
+  <linearGradient id="patty" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#43231d"/><stop offset=".32" stop-color="#1f1513"/><stop offset=".7" stop-color="#3e211a"/><stop offset="1" stop-color="#100f0f"/></linearGradient>
+  <linearGradient id="cheese" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#ffd15c"/><stop offset=".7" stop-color="#ff9d20"/><stop offset="1" stop-color="#dc511b"/></linearGradient>
+  <linearGradient id="lettuce" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a8b64c"/><stop offset="1" stop-color="#385f32"/></linearGradient>
+  <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="20"/></filter>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .07"/></feComponentTransfer></filter>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#fff" stroke-opacity=".045" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="867" fill="url(#bg)"/>
+<rect width="1200" height="867" fill="url(#grid)" opacity=".22"/>
+<ellipse cx="845" cy="424" rx="430" ry="415" fill="url(#glow)"/>
+<path d="M720 150C900 95 1030 185 1098 330S1101 600 976 690" fill="none" stroke="#ff9e42" stroke-opacity=".13" stroke-width="2"/>
+<path d="M742 129C952 68 1117 196 1150 369" fill="none" stroke="#ffc36d" stroke-opacity=".1" stroke-width="1"/>
+<!-- restrained browser-like top bar -->
+<rect x="0" y="0" width="1200" height="98" fill="#100f0e" fill-opacity=".62"/>
+<path d="M0 98H1200" stroke="#fff" stroke-opacity=".13"/>
+<g transform="translate(64 31)"><rect width="42" height="38" rx="11" fill="#fa7e32"/><path d="M10 13h22M10 19h16M10 25h19" stroke="#28140e" stroke-width="2.4" stroke-linecap="round"/><text x="56" y="17" fill="#fff3df" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="800" letter-spacing="1.5">SMASH <tspan fill="#ff9947">&amp;</tspan> SIZZLE</text><text x="57" y="33" fill="#c7a18a" font-family="Arial,Helvetica,sans-serif" font-size="8.5" letter-spacing="3.2">FRESH OFF THE GRIDDLE</text></g>
+<g fill="#dbc9b8" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="700" letter-spacing="1.7"><text x="690" y="53">THE MENU</text><text x="796" y="53">OUR STORY</text><text x="909" y="53">FIND US</text></g>
+<rect x="1000" y="27" width="135" height="43" rx="21.5" fill="#ff8739"/><text x="1067.5" y="53" text-anchor="middle" fill="#22130f" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="800" letter-spacing="1.2">ORDER NOW</text>
+<!-- left editorial headline -->
+<g transform="translate(68 204)">
+  <rect x="0" y="0" width="185" height="29" rx="14.5" fill="#fa7d31" fill-opacity=".13" stroke="#fa9b55" stroke-opacity=".4"/>
+  <circle cx="17" cy="14.5" r="3.5" fill="#ffa247"/><text x="30" y="18.5" fill="#ffc48b" font-family="Arial,Helvetica,sans-serif" font-size="9.5" font-weight="700" letter-spacing="1.9">SMASHED FRESH · SEARED HOT</text>
+  <text x="-3" y="128" fill="#fff0dc" font-family="Georgia,'Times New Roman',serif" font-size="76" letter-spacing="-3.5">BIG FLAVOUR.</text>
+  <text x="-1" y="208" fill="#ff9b45" font-family="Georgia,'Times New Roman',serif" font-size="70" font-style="italic" letter-spacing="-3.5">NO SHORTCUTS.</text>
+  <path d="M1 229H260" stroke="#ff943d" stroke-width="2" stroke-opacity=".8"/>
+  <text x="1" y="272" fill="#ded0c1" font-family="Arial,Helvetica,sans-serif" font-size="16">Hot iron. House sauce. Every bite</text>
+  <text x="1" y="297" fill="#ded0c1" font-family="Arial,Helvetica,sans-serif" font-size="16">made to bring you back for more.</text>
+  <rect x="0" y="337" width="190" height="52" rx="26" fill="#ff8739"/>
+  <text x="25" y="368" fill="#24130e" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="800" letter-spacing="1.2">EXPLORE THE MENU</text><path d="M158 361h9m-4-4 4 4-4 4" fill="none" stroke="#24130e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="226" cy="363" r="25" fill="none" stroke="#e5c8ad" stroke-opacity=".65"/><path d="M218 363h15m-6 -6 6 6-6 6" fill="none" stroke="#f4e4d1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1" y="433" fill="#bda28e" font-family="Arial,Helvetica,sans-serif" font-size="9" letter-spacing="2.3">MADE WITH FIRE. SERVED WITH ATTITUDE.</text>
+</g>
+<!-- hero burger illustration: original vector cover art, not a site screenshot -->
+<g transform="translate(850 445) rotate(-5)">
+  <ellipse cx="4" cy="235" rx="255" ry="48" fill="#000" opacity=".52" filter="url(#softShadow)"/>
+  <ellipse cx="1" cy="232" rx="220" ry="34" fill="#ef7631" opacity=".15"/>
+  <!-- bottom bun -->
+  <path d="M-211 151Q-206 120-166 112L167 110Q207 124 212 154L195 190Q186 207 164 207H-164Q-189 205-198 185Z" fill="url(#bun)" stroke="#8a4324" stroke-width="4"/>
+  <path d="M-189 155Q-95 172 0 160T190 151" fill="none" stroke="#ffc26e" stroke-opacity=".55" stroke-width="4"/>
+  <!-- lettuce -->
+  <path d="M-218 131L-197 105-169 119-145 93-117 113-86 93-58 111-30 90-4 110 28 92 53 111 83 92 104 110 136 94 157 115 191 101 218 129 198 143 158 137 128 149 97 136 70 150 39 135 9 151-20 137-53 148-83 134-118 145-147 130-182 144Z" fill="url(#lettuce)" stroke="#32452c" stroke-width="3"/>
+  <!-- tomato and pickles -->
+  <path d="M-173 111Q-163 83-120 86L-32 94Q-13 104-22 119L-155 124Z" fill="#c83f31" stroke="#82281f" stroke-width="3"/>
+  <path d="M11 98Q16 76 48 79L134 87Q158 96 146 113L23 117Z" fill="#dd4b35" stroke="#82281f" stroke-width="3"/>
+  <g fill="#7da449" stroke="#395831" stroke-width="3"><ellipse cx="-97" cy="104" rx="30" ry="10" transform="rotate(-12 -97 104)"/><ellipse cx="83" cy="103" rx="31" ry="10" transform="rotate(9 83 103)"/></g>
+  <!-- molten cheese -->
+  <path d="M-213 82L-183 57-132 70-87 53-31 69 9 49 49 69 94 53 132 71 182 59 211 83 173 116 135 111 126 156 92 143 68 160 37 138-1 155-28 139-65 151-95 132-135 142-162 119-194 120Z" fill="url(#cheese)" stroke="#a7491b" stroke-width="3"/>
+  <path d="M-150 72Q-87 94-20 74T113 77" fill="none" stroke="#ffe39a" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+  <!-- double smash patties -->
+  <path d="M-204 58Q-189 30-151 32L153 28Q198 34 207 57L190 83Q181 96 155 96H-158Q-188 92-195 79Z" fill="url(#patty)" stroke="#090b0b" stroke-width="4"/>
+  <path d="M-187 53Q-112 62-40 53T174 51" stroke="#6f3928" stroke-width="4" fill="none" opacity=".75"/>
+  <path d="M-193 16Q-184-14-146-16L151-22Q189-17 198 10L188 38Q180 50 152 51L-156 54Q-183 50-190 34Z" fill="url(#cheese)" stroke="#a94e20" stroke-width="3"/>
+  <path d="M-196 4Q-132 20-65 8T191 9" fill="none" stroke="#ffdf86" stroke-width="5" opacity=".8"/>
+  <path d="M-202-10Q-192-41-151-42L152-48Q190-43 201-14L192 9Q186 23 157 22L-154 25Q-187 22-194 9Z" fill="url(#patty)" stroke="#090b0b" stroke-width="4"/>
+  <path d="M-185-17Q-100-1-7-17T182-18" stroke="#77402b" stroke-width="4" fill="none" opacity=".7"/>
+  <!-- top bun -->
+  <path d="M-209-21C-214-70-173-133-93-154C-36-170 62-169 117-150C180-128 211-74 207-25Q112-7 0-12T-209-21Z" fill="url(#bunTop)" stroke="#81401f" stroke-width="5"/>
+  <path d="M-180-42Q-98-21 0-31T181-41" fill="none" stroke="#9c4c25" stroke-width="5" opacity=".55"/>
+  <!-- sesame seeds -->
+  <g fill="#fff0c4" stroke="#cf9955" stroke-width="1.3">
+    <ellipse cx="-111" cy="-115" rx="5.5" ry="3" transform="rotate(-33 -111 -115)"/><ellipse cx="-64" cy="-139" rx="5.5" ry="3" transform="rotate(22 -64 -139)"/><ellipse cx="-20" cy="-119" rx="5.5" ry="3" transform="rotate(-28 -20 -119)"/><ellipse cx="27" cy="-143" rx="5.5" ry="3" transform="rotate(38 27 -143)"/><ellipse cx="72" cy="-120" rx="5.5" ry="3" transform="rotate(-15 72 -120)"/><ellipse cx="119" cy="-107" rx="5.5" ry="3" transform="rotate(27 119 -107)"/><ellipse cx="-150" cy="-77" rx="5.5" ry="3" transform="rotate(16 -150 -77)"/><ellipse cx="-69" cy="-80" rx="5.5" ry="3" transform="rotate(-25 -69 -80)"/><ellipse cx="3" cy="-88" rx="5.5" ry="3" transform="rotate(40 3 -88)"/><ellipse cx="71" cy="-79" rx="5.5" ry="3" transform="rotate(-16 71 -79)"/><ellipse cx="146" cy="-74" rx="5.5" ry="3" transform="rotate(28 146 -74)"/>
+  </g>
+  <!-- hand-crafted accent glints -->
+  <path d="M-237-130l7-21m2 36 22 5m194-80 1-24m-9 29 15-10m221 82 11-14m-14 29 23 3" stroke="#ff9a45" stroke-width="4" stroke-linecap="round"/>
+</g>
+<!-- sizzle accents and bottom information strip -->
+<g fill="none" stroke="#ff8e40" stroke-linecap="round"><path d="M705 288c-25-29 12-36-6-65" stroke-width="3"/><path d="M738 270c-16-23 16-31 2-51" stroke-width="2" opacity=".6"/><path d="M1090 230c-19-22 10-29 0-45" stroke-width="2" opacity=".7"/></g>
+<rect x="64" y="784" width="1072" height="1" fill="#f2d2b0" fill-opacity=".28"/>
+<g font-family="Arial,Helvetica,sans-serif"><text x="65" y="818" fill="#f9e6ce" font-size="10" font-weight="700" letter-spacing="2">BOLD FLAVOUR. NO BORING BITES.</text><text x="1135" y="818" text-anchor="end" fill="#b89a83" font-size="9" letter-spacing="2">THE SMASH &amp; SIZZLE EXPERIENCE</text><text x="65" y="842" fill="#957663" font-size="8.5" letter-spacing="1.8">01 / THE GRIDDLE  ·  02 / THE SAUCE  ·  03 / THE CRUNCH</text><text x="1135" y="842" text-anchor="end" fill="#957663" font-size="8.5" letter-spacing="1.8">SCROLL TO EXPLORE</text></g>
+<rect width="1200" height="867" filter="url(#grain)" opacity=".55" pointer-events="none"/>
+<rect x="1" y="1" width="1198" height="865" fill="none" stroke="#fff" stroke-opacity=".11" stroke-width="2"/>
+</svg>

@@ -1,29 +1,31 @@
-# Verification Report — Scroll Experience Redesign
+# Verification Report — Portfolio Release
 
-Date: 2026-10-18
+Date: 2026-10-20
 
 ## Automated checks
 
-- `npm run build`: passed. Generated `dist/` with three project cases.
+- `npm run build`: passed; generated the static site with 4 project cases.
 - `npm test`: passed, 8 tests / 0 failures.
 - `npm run check`: passed.
-- CSS syntax parse with `tinycss2`: 46 top-level rules, zero parse errors.
-- Local HTTP checks: `/`, `/styles/site.css`, and `/assets/signature-sculpture.webp` returned HTTP 200.
-- The unused experimental procedural scene is excluded from the TypeScript build output, so it cannot load over the approved artwork.
+- CSS syntax parser (`tinycss2`): no parsing errors.
+- Local HTTP smoke test: 26 local HTML references were requested from the project's own preview server; every response returned HTTP 200.
+- Asset reference audit: all non-data local CSS `url()` references resolve to existing files.
+- Production output inventory: 22 files / 756,972 uncompressed bytes. The release package includes this exact output under `INFINITYFREE-HTDOCS/`.
+- Project data contains exactly four project entries, the new Nexora One URL (`https://nexora-one-dusky.vercel.app`) and the Smash & Sizzle URL (`https://smash-and-sizzle-demo.vercel.app`); the previous Nexora URL is absent from the generated HTML.
+- No unresolved HTML template tokens remain in the built page.
+- The unused experimental procedural scene is excluded from the TypeScript build output, so it cannot load in place of the approved artwork.
 
 ## Behavior covered in code/tests
 
-- The accurate sculpture is now a persistent fixed layer outside the hero and is driven by whole-document scroll progress.
-- The sculpture has chapter-specific opacity and moves in X/Y/Z with perspective rotation and scale.
-- Capabilities title is a glass material panel with fine-pointer tilt; selected capability/process cards and contact/project surfaces receive restrained tilt/depth treatment.
-- IntersectionObserver reveals selected sections as they enter view, with a visible-by-default fallback when the API is unavailable.
-- The motion toggle freezes scroll-driven transforms. `prefers-reduced-motion`, `prefers-reduced-transparency`, and forced-colors fallbacks are retained.
-- The footer and metadata are part of the reveal system.
+- The signature sculpture remains a persistent fixed layer and is driven by whole-document scroll progress.
+- Selected sections and cards use the existing material/scroll-depth system; reduced-motion, reduced-transparency, and forced-colors fallbacks remain present.
+- The motion toggle, accessible navigation, project actions, contact details, and four-card inventory are covered by the source tests or structural checks.
+- Local asset references used by the built HTML respond correctly from the preview server.
 
 ## Not verified in this container
 
-Headless Chromium timed out during startup, so no trustworthy live browser screenshot, console trace, interaction run, or Lighthouse/Core Web Vitals report could be captured for this iteration. The user should run `npm run dev` locally in Chrome or Edge, scroll from top to footer, test the motion toggle and reduced-motion preference, and run Lighthouse before production deployment.
+Headless Chromium timed out during startup, so a reliable current-release browser screenshot, console trace, interaction run, or Lighthouse/Core Web Vitals report could not be captured. The screenshots in `screenshots/` are explicitly marked historical and predate the fourth project. For a final visual check, run `npm run dev` locally in Chrome or Edge, inspect the complete page at desktop and mobile widths, test the motion toggle and reduced-motion preference, and run Lighthouse. The external Vercel deployments were not fetched live; their links were validated in project data and generated HTML, not tested as remote HTTP destinations.
 
 ## Important distinction
 
-The scrolling crystal is the supplied transparent artwork on a perspective-transformed image plane. It is not a volumetric GLB model. This preserves the approved silhouette and avoids the previous shark-like procedural mesh. A true 3D crystal would require a bespoke model and a separate validated lighting/material pipeline.
+The scrolling crystal is the supplied transparent artwork on a perspective-transformed image plane. It is not a volumetric GLB model. This preserves the approved silhouette and avoids the inaccurate experimental procedural mesh.

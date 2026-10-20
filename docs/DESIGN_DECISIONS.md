@@ -19,14 +19,14 @@ The visual system uses an airy mineral paper base, deep teal/blue anchors, a con
 
 - Replaced the nested ring/atom motif with a bespoke twisted ribbon + faceted crystal visual system and transparent, art-directed raster fallback.
 - Kept the header as the most visible glass surface and upgraded control-level surfaces; the project text and feature lists remain crisp instead of being buried under glass panels.
-- Varied project presentation: Nexora One is a full-width feature case, Cowboy Burger reverses the split, and Café Aroma returns to a standard split. The third layout is not another copy of the first two.
+- Varied project presentation: Nexora One is a full-width feature case, Cowboy Burger reverses the split, Café Aroma returns to a standard split, and Smash & Sizzle becomes the fourth reversed case with a distinctive locally authored cover artwork. The third layout is not another copy of the first two.
 - Project entries show visible names, truthful status, inspectable description/features, and useful outbound actions. They deliberately omit fake client testimonials, awards, revenue, user counts, and impact percentages.
 - About imagery uses an offset material plate rather than a second orbit motif. Contact uses a glass editorial plate, not decorative bubbles.
 - Favicon and home-brand icon share a distinct glass-prism/monogram motif.
 
 ## Known content and verification limits
 
-- The owner explicitly requested the `Nexora One` entry and provided `https://nexora-one.onrender.com`. The supplied screenshot at `starter-assets/nexora-one.webp` visibly brands the website as **Aurelia Living**. The project is included as `Nexora One`, with the visible brand included in metadata to avoid hiding the mismatch. Confirm whether Nexora One is the internal/project name and Aurelia Living the public website brand, or replace the image/name/URL accordingly before production.
+- The owner explicitly requested the `Nexora One` entry and later updated its destination to `https://nexora-one-dusky.vercel.app`. The supplied screenshot at `starter-assets/nexora-one.webp` visibly brands the website as **Aurelia Living**. The project is included as `Nexora One`, with the visible brand included in metadata to avoid hiding the mismatch. Confirm whether Nexora One is the internal/project name and Aurelia Living the public website brand, or replace the image/name/URL accordingly before production.
 - The URL and supplied image were not fetched live in this environment because outbound DNS resolution is blocked. The screenshot asset exists locally and is included. Test the link from your machine before launch.
 - A real desktop browser with a working WebGL 2 context is still required to verify the live scene. The CSS/image fallback is available and the build/tests can run offline with TypeScript installed. Lighthouse/Core Web Vitals are not claimed.
 - The public portfolio domain is unknown, so canonical URL and absolute social metadata remain unset.

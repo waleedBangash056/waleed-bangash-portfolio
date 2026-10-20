@@ -34,7 +34,7 @@ function renderProject(project, index) {
         <span class="project-sticker"><span>${escapeHtml(project.number)}</span><span>${escapeHtml(project.status)}</span></span>
       </div>
       <div class="project-info">
-        <div class="project-meta"><span>${escapeHtml(project.category)}</span><span>${escapeHtml(project.number)} / 03</span></div>
+        <div class="project-meta"><span>${escapeHtml(project.category)}</span><span>${escapeHtml(project.number)} / ${String(projects.length).padStart(2, '0')}</span></div>
         <h3 id="project-${escapeHtml(project.id)}-title">${escapeHtml(project.title)}<span class="heading-period">.</span></h3>
         <p class="project-description">${escapeHtml(project.description)}</p>
         <ul class="project-features">${features}</ul>
@@ -49,6 +49,7 @@ const replacements = {
   '{{HERO_HEADLINE}}': escapeHtml(profile.heroHeadline),
   '{{HERO_SUMMARY}}': escapeHtml(profile.heroSummary),
   '{{ABOUT_COPY}}': escapeHtml(profile.aboutCopy),
+  '{{PROJECT_COUNT}}': String(projects.length).padStart(2, '0'),
   '{{EMAIL}}': escapeHtml(profile.email),
   '{{EMAIL_HREF}}': `mailto:${escapeHtml(profile.email)}`, 
   '{{WHATSAPP_DISPLAY}}': escapeHtml(profile.whatsappDisplay),

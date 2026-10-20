@@ -29,7 +29,7 @@
       "image": "/assets/nexora-one.webp",
       "imageSmall": "/assets/nexora-one-640.webp",
       "imageAlt": "Homepage preview of the furniture and interior storefront associated with the Nexora One project entry.",
-      "demoUrl": "https://nexora-one.onrender.com",
+      "demoUrl": "https://nexora-one-dusky.vercel.app",
       "sourceUrl": "",
       "theme": "nexora",
       "layout": "wide",
@@ -76,6 +76,27 @@
       "theme": "cafe",
       "layout": "split",
       "primaryLinkLabel": "Open concept"
+    },
+    {
+      "id": "smash-and-sizzle",
+      "number": "04",
+      "title": "Smash & Sizzle",
+      "category": "Restaurant · Food & beverage",
+      "status": "Website demo",
+      "description": "A bold food-brand experience designed to make the offer memorable, give the restaurant a distinct digital presence, and guide visitors into the live experience.",
+      "features": [
+        "Food-first visual storytelling",
+        "Restaurant and menu discovery",
+        "Clear pathways into the live experience"
+      ],
+      "image": "/assets/smash-and-sizzle.webp",
+      "imageSmall": "/assets/smash-and-sizzle-640.webp",
+      "imageAlt": "Original editorial cover artwork for the Smash & Sizzle portfolio entry; open the linked demo to inspect the live website.",
+      "demoUrl": "https://smash-and-sizzle-demo.vercel.app",
+      "sourceUrl": "",
+      "theme": "smash",
+      "layout": "reverse",
+      "primaryLinkLabel": "Open demo"
     }
   ]
 }

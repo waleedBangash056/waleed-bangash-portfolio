@@ -1,5 +1,7 @@
 # Visual verification captures
 
+> **Version note:** These captures predate the latest four-project update and are historical fallback evidence, not screenshots of the exact current release. Use `docs/VERIFICATION_REPORT.md` for the current build, test, and local HTTP smoke-test results.
+
 These captures were rendered in Chromium with the built `index.html`, the exact built CSS/token files, and local image bytes embedded in an isolated page fixture. The environment blocks normal localhost navigation, so this is static/fallback-render evidence, not a production-origin run.
 
 - `desktop-fallback-1440x1000.png`: desktop first impression with the designed sculpture fallback.

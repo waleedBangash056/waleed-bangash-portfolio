@@ -20,11 +20,14 @@ test('generated HTML resolves every token and includes the complete semantic jou
   assert.match(html, /class="scene-stage[^"]*"[\s\S]*?scene-artwork/);
   assert.match(html, /data-reveal/);
   assert.match(html, /Nexora One/);
-  assert.match(html, /https:\/\/nexora-one\.onrender\.com/);
+  assert.match(html, /https:\/\/nexora-one-dusky\.vercel\.app/);
+  assert.doesNotMatch(html, /https:\/\/nexora-one\.onrender\.com/);
+  assert.match(html, /https:\/\/smash-and-sizzle-demo\.vercel\.app/);
+  assert.match(html, /Smash &amp; Sizzle/);
   assert.match(html, /signature-sculpture\.webp/);
   assert.match(html, /favicon-32\.png/);
   assert.match(html, /aria-label="Primary navigation"/);
-  assert.equal((html.match(/class="project project--/g) ?? []).length, 3);
+  assert.equal((html.match(/class="project project--/g) ?? []).length, 4);
   assert.ok(html.includes(data.profile.aboutCopy), 'about copy is rendered from the central profile object');
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
   assert.equal(ids.length, new Set(ids).size, 'generated HTML IDs are unique');
@@ -50,7 +53,7 @@ test('generated contact links use the profile source and encoded WhatsApp messag
   assert.ok(html.includes(data.profile.github));
 });
 
-test('generated project links show all three requested projects and honest project actions', () => {
+test('generated project links show all four requested projects and honest project actions', () => {
   assert.match(html, /Open website/);
   assert.match(html, /Open demo/);
   assert.match(html, /Open concept/);
@@ -59,6 +62,13 @@ test('generated project links show all three requested projects and honest proje
   assert.match(html, /Aurelia Living/);
   assert.match(html, /Café Aroma/);
   assert.match(html, /Cowboy Burger/);
+  assert.match(html, /Smash &amp; Sizzle/);
+  assert.match(html, /04 \/ 04/);
+  assert.match(html, /04<\/span><span>Website demo<\/span>/);
+  assert.match(html, /SELECTED WORK \/ 04/);
+  assert.match(html, /01—04/);
+  assert.match(html, /project--smash/);
+  assert.match(html, /smash-and-sizzle\.webp/);
 });
 
 test('favicon files are copied to the production site', async () => {

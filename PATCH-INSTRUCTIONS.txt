@@ -1,0 +1,12 @@
+Waleed Bangash Portfolio Update Patch
+
+Apply these files over the ROOT of your existing portfolio SOURCE project, preserving the directory structure. Do NOT copy this patch into htdocs.
+
+Then run:
+  npm test
+  npm run check
+  npm run build
+
+For a static-host upload, upload the CONTENTS of the newly generated dist/ directory to the host's document root (for example, htdocs on InfinityFree).
+
+The Smash & Sizzle card uses locally authored editorial cover artwork rather than a verified screenshot of the deployed site, because the remote site could not be fetched from the build environment. The linked card still points to the supplied live demo URL.

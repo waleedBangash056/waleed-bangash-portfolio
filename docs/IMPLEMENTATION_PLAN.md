@@ -11,7 +11,7 @@ Updated: 18 October 2026
 ## Phase 1 — Project evidence, assets and identity
 
 - Updated `data/site-data.json` as the central source of truth for biography, contact links and project metadata.
-- Added Nexora One as the lead case at the owner's explicit request and reused the actual supplied `nexora-one.webp`/`nexora-one-640.webp` assets rather than inventing a screenshot. The card explicitly identifies the visible Aurelia Living brand in its category so the naming relationship is not hidden.
+- Added Nexora One as the lead case at the owner's explicit request and reused the actual supplied `nexora-one.webp`/`nexora-one-640.webp` assets rather than inventing a screenshot. Its URL was later updated to the owner-provided Vercel deployment. The card explicitly identifies the visible Aurelia Living brand in its category so the naming relationship is not hidden.
 - Reworked project composition: Nexora One is wide; Cowboy Burger is reversed; Café Aroma is split. Each has a truthful category/status label, features and a direct destination.
 - Added a new SVG/PNG/ICO favicon set and iOS touch icon. Updated the site wordmark to use the shared icon asset.
 
@@ -33,7 +33,7 @@ Updated: 18 October 2026
 
 - `npm test`: 8 tests passed, 0 failed.
 - `npm run check`: passed.
-- `npm run build`: passed; `dist/index.html` contains 3 project cases.
+- `npm run build`: passed; `dist/index.html` contains 4 project cases.
 - `curl` checks verify the preview server serves HTML, styles, compiled JS and favicon/project assets.
 - Playwright rendered the generated markup, local images, tokens and CSS at 1440, 768, 390 and 360px widths. No horizontal overflow; all 8 image elements decoded; no page errors in the static capture harness. Full-page, work-section, desktop, tablet, mobile and small-mobile screenshots are in `screenshots/`.
 - Inline isolated-page interaction checks passed: opening/closing the mobile nav, Escape-key focus restoration, pause/resume state, and native `#work` hash navigation.

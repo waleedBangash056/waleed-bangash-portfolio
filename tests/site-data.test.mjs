@@ -26,9 +26,9 @@ test('encodes the one approved WhatsApp message into a wa.me URL', () => {
   assert.equal(url.pathname.includes('+'), false);
 });
 
-test('features only evidence-backed projects with distinct IDs and local imagery', async () => {
+test('includes unique project entries with resolvable local media', async () => {
   const projects = data.projects;
-  assert.deepEqual(projects.map(({ id }) => id), ['nexora-one', 'cowboy-burger', 'cafe-aroma']);
+  assert.deepEqual(projects.map(({ id }) => id), ['nexora-one', 'cowboy-burger', 'cafe-aroma', 'smash-and-sizzle']);
   assert.equal(new Set(projects.map(({ id }) => id)).size, projects.length);
   for (const project of projects) {
     assert.ok(project.title);
@@ -38,7 +38,17 @@ test('features only evidence-backed projects with distinct IDs and local imagery
     await assert.doesNotReject(readFile(path.join(root, 'public', project.image.replace(/^\//, ''))));
   }
   const nexoraProject = projects[0];
-  assert.equal(nexoraProject.demoUrl, 'https://nexora-one.onrender.com');
+  assert.equal(nexoraProject.demoUrl, 'https://nexora-one-dusky.vercel.app');
+  assert.equal(projects.some(({ demoUrl }) => demoUrl === 'https://nexora-one.onrender.com'), false);
+  const smashAndSizzle = projects.find(({ id }) => id === 'smash-and-sizzle');
+  assert.ok(smashAndSizzle, 'new restaurant project is included');
+  assert.equal(smashAndSizzle.title, 'Smash & Sizzle');
+  assert.equal(smashAndSizzle.demoUrl, 'https://smash-and-sizzle-demo.vercel.app');
+  assert.equal(smashAndSizzle.number, '04');
+  assert.equal(smashAndSizzle.primaryLinkLabel, 'Open demo');
+  assert.ok(smashAndSizzle.features.length >= 3);
+  await assert.doesNotReject(readFile(path.join(root, 'public', smashAndSizzle.image.replace(/^\//, ''))));
+  await assert.doesNotReject(readFile(path.join(root, 'public', smashAndSizzle.imageSmall.replace(/^\//, ''))));
   assert.equal(nexoraProject.title, 'Nexora One');
   assert.equal(nexoraProject.layout, 'wide');
   assert.match(nexoraProject.image, /nexora-one\.webp$/);
