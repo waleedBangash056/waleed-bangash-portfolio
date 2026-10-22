@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Integrity manifest for the reviewed transparent avatar media shipped with this portfolio.",
+  "alphaVideoFile": "waleed-introduction-alpha.webm",
+  "alphaVideoSha256": "9de2881a039ad01c0194a99d7de7dd106d2eaf5e8a16e4db83aabee4c702affb",
+  "sourceVideoFile": "waleed-introduction-source.mp4",
+  "sourceVideoSha256": "fa6d7ca1f61f0f35edba1c62fd7fee5f30736634529c053adbaa5b248276f4e0",
+  "posterFile": "waleed-avatar-poster.webp",
+  "posterSha256": "b7391e9ad69782f879fa815fb8abf507ac742bbd1dbf9e2ee92ee85a2247085c",
+  "validation": {
+    "format": "WebM / VP9 with an alpha plane and Opus audio",
+    "durationSeconds": 10.028,
+    "width": 720,
+    "height": 1280,
+    "frames": 240,
+    "fps": 24,
+    "alphaPlaneChecked": true,
+    "alphaPlaneSignalRange": [
+      0,
+      255
+    ],
+    "audioPreserved": true,
+    "sourceBackground": "Light-gray checkerboard baked into source MP4; processed into a transparent matte for the VP9 WebM. The original MP4 is retained only for Safari canvas-keying fallback.",
+    "localizedMatteCorrection": {
+      "applied": true,
+      "framesAudited": 240,
+      "fps": 24,
+      "backgroundArtifactsRemoved": [
+        "Light checkerboard remnants between the left-side hand/fingers and beside the hanging hand",
+        "Pale checkerboard wedge and thin gray edge slivers in the inner viewer-right elbow/sleeve gap"
+      ],
+      "regions": [
+        {
+          "id": "left-hand-negative-space",
+          "canvasPixels": [
+            195,
+            650,
+            285,
+            810
+          ],
+          "edgeGrowthPixels": 2
+        },
+        {
+          "id": "inner-elbow-negative-space",
+          "canvasPixels": [
+            470,
+            480,
+            520,
+            595
+          ],
+          "edgeGrowthPixels": 3
+        }
+      ],
+      "method": "Detect source-colored near-neutral background pixels, grow the matte only into connected pixels within the two audited negative-space zones, and preserve alpha outside those local masks.",
+      "idlePosterRefined": true,
+      "beforeAfterReviewedAtSeconds": [
+        0,
+        1,
+        2,
+        8,
+        9
+      ],
+      "opaqueBackgroundComponentsRemainingInTargetRegions": 0,
+      "postEncodeAlphaPlaneRevalidated": true
+    }
+  }
+}

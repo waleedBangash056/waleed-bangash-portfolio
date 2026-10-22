@@ -11,7 +11,37 @@
     "whatsappMessage": "Hi Waleed, I'm interested in discussing a website development project.",
     "github": "https://github.com/waleedBangash056",
     "linkedin": "https://www.linkedin.com/in/waleed-ahmed-khan-31807b3b1",
-    "productionDomain": ""
+    "productionDomain": "",
+    "introSegments": [
+      {
+        "phase": "opening",
+        "kicker": "INTRODUCTION / 01",
+        "title": "Good to meet you.",
+        "caption": "Hi, I’m Waleed Bangash.",
+        "spoken": "Hi, I’m Waleed Bangash."
+      },
+      {
+        "phase": "craft",
+        "kicker": "THOUGHTFUL DESIGN / 02",
+        "title": "Digital experiences with intent.",
+        "caption": "I build thoughtful digital experiences",
+        "spoken": "I build thoughtful digital experiences"
+      },
+      {
+        "phase": "detail",
+        "kicker": "DESIGN + ENGINEERING / 03",
+        "title": "Every detail has a purpose.",
+        "caption": "that combine bold design, smooth interactions, and reliable engineering.",
+        "spoken": "that combine bold design, smooth interactions, and reliable engineering."
+      },
+      {
+        "phase": "invitation",
+        "kicker": "WELCOME / 04",
+        "title": "Explore what I make.",
+        "caption": "Welcome to my portfolio.",
+        "spoken": "Welcome to my portfolio."
+      }
+    ]
   },
   "projects": [
     {
@@ -33,7 +63,9 @@
       "sourceUrl": "",
       "theme": "nexora",
       "layout": "wide",
-      "primaryLinkLabel": "Open website"
+      "primaryLinkLabel": "Open website",
+      "demoOpenMode": "responsive",
+      "primaryActionId": "nexora-live"
     },
     {
       "id": "cowboy-burger",
@@ -91,12 +123,16 @@
       ],
       "image": "/assets/smash-and-sizzle.webp",
       "imageSmall": "/assets/smash-and-sizzle-640.webp",
-      "imageAlt": "Original editorial cover artwork for the Smash & Sizzle portfolio entry; open the linked demo to inspect the live website.",
+      "imageAlt": "Screenshot of the Smash & Sizzle restaurant website, showing its dark interface, red delivery controls, bold headline, and featured burger.",
       "demoUrl": "https://smash-and-sizzle-demo.vercel.app",
-      "sourceUrl": "",
+      "sourceUrl": "https://github.com/waleedBangash056/fast-food-ordering-system",
       "theme": "smash",
       "layout": "reverse",
-      "primaryLinkLabel": "Open demo"
+      "primaryLinkLabel": "Open demo",
+      "imageWidth": 1600,
+      "imageHeight": 780,
+      "imageSmallWidth": 640,
+      "imageSmallHeight": 312
     }
   ]
 }

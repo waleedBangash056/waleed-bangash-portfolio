@@ -4,6 +4,8 @@
 
 These captures were rendered in Chromium with the built `index.html`, the exact built CSS/token files, and local image bytes embedded in an isolated page fixture. The environment blocks normal localhost navigation, so this is static/fallback-render evidence, not a production-origin run.
 
+- `avatar-alpha-contact-sheet.jpg`: ten sample frames from the submitted avatar video, composited offline over the final office scene and open portal/floor treatment to review matte stability through the 10-second performance. This is an asset-compositing QA sheet, **not** a browser screenshot of the live HTML page.
+
 - `desktop-fallback-1440x1000.png`: desktop first impression with the designed sculpture fallback.
 - `desktop-motion-1440x1000.png`: same desktop composition with normal motion preference.
 - `full-page-fallback-desktop.png`: complete page composition.

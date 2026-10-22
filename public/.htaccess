@@ -1,0 +1,7 @@
+# Explicit media types for reliable static hosting, including shared-hosting deployments.
+<IfModule mod_mime.c>
+  AddType video/webm .webm
+  AddType video/mp4 .mp4
+  AddType text/vtt .vtt
+  AddType image/webp .webp
+</IfModule>

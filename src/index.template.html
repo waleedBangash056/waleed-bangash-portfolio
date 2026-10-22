@@ -16,6 +16,7 @@
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=3" />
     <link rel="stylesheet" href="/styles/tokens.css" />
     <link rel="stylesheet" href="/styles/site.css" />
+    <script id="intro-script-data" type="application/json">{{INTRO_SCRIPT_JSON}}</script>
     <script type="module" src="/app/main.js"></script>
   </head>
   <body>
@@ -59,19 +60,61 @@
             <div class="hero-actions">
               <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
               <a class="button button-text" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+              <button class="button button-intro" id="play-intro" type="button" aria-controls="intro-theatre" aria-describedby="intro-voice-note" {{INTRO_BUTTON_DISABLED}}>
+                <span class="intro-button-symbol" aria-hidden="true">▶</span>
+                <span class="intro-button-copy"><strong class="intro-button-title">{{INTRO_BUTTON_TITLE}}</strong><small class="intro-button-note">{{INTRO_BUTTON_NOTE}}</small></span>
+              </button>
             </div>
+            <p class="intro-voice-note" id="intro-voice-note">{{INTRO_VOICE_NOTE}}</p>
+            <details class="intro-transcript"><summary>Read the introduction</summary><p>{{INTRO_TRANSCRIPT}}</p></details>
             <div class="hero-note"><span class="note-line"></span><span>Independent practice · Built with intent</span></div>
           </div>
-          <div class="hero-visual" role="group" aria-label="Portrait and sculptural visual signature">
+          <div class="hero-visual hero-visual--intro" role="group" aria-label="Cinematic introduction scene featuring Waleed Bangash">
             <div class="visual-caption visual-caption--top"><span>FORM / FUNCTION</span><span>WB — 026</span></div>
             <div class="hero-glass-label" aria-hidden="true"><span class="glass-label-spark"></span><span>DESIGN + ENGINEERING</span><b>01—{{PROJECT_COUNT}}</b></div>
-            <figure class="portrait-card portrait-card--hero depth-plane" data-depth="hero-portrait">
-              <div class="portrait-frame">
-                <img src="/assets/portrait-800.webp" srcset="/assets/portrait-480.webp 480w, /assets/portrait-800.webp 800w" sizes="(max-width: 640px) 70vw, 310px" width="800" height="1200" alt="Portrait of Waleed Bangash wearing a dark suit and glasses." fetchpriority="high" decoding="async" />
-                <span class="portrait-edge" aria-hidden="true"></span>
+            <div class="intro-theatre depth-plane" id="intro-theatre" data-state="idle" data-phase="idle" data-motion="full" data-media-started="false" data-video-ready="{{INTRO_VIDEO_READY}}" data-alpha-src="{{INTRO_ALPHA_VIDEO_SRC}}" data-key-src="{{INTRO_KEY_VIDEO_SRC}}" data-renderer="alpha-webm" aria-label="A talking avatar in a layered 3D-inspired studio environment. The introduction starts only when you press play.">
+              <img class="intro-office-backdrop" src="/assets/intro-studio.webp" width="1672" height="940" alt="" aria-hidden="true" fetchpriority="high" decoding="async" />
+              <div class="intro-world-architecture" aria-hidden="true">
+                <span class="intro-world-arch"></span>
+                <span class="intro-world-panel intro-world-panel--left"></span>
+                <span class="intro-world-panel intro-world-panel--right"></span>
+                <span class="intro-world-floor"></span>
+                <span class="intro-world-floor-glow"></span>
               </div>
-              <figcaption><span>{{DISPLAY_NAME}}</span><span>DEVELOPER / MAKER</span></figcaption>
-            </figure>
+              <div class="intro-scene-shade" aria-hidden="true"></div>
+              <img class="intro-avatar-still" id="intro-avatar-still" src="/assets/waleed-avatar-poster.webp" width="720" height="1280" alt="" aria-hidden="true" decoding="async" />
+              <video class="intro-avatar-video" id="intro-avatar-video" playsinline preload="none" aria-label="Waleed Bangash speaking his portfolio introduction">{{INTRO_VIDEO_SOURCE}}{{INTRO_VIDEO_TRACK}}</video>
+              <canvas class="intro-avatar-canvas" id="intro-avatar-canvas" width="720" height="1280" hidden aria-hidden="true"></canvas>
+              <div class="intro-camera-rig" aria-hidden="true">
+                <span class="intro-orbit intro-orbit--outer"></span>
+                <span class="intro-orbit intro-orbit--inner"></span>
+                <span class="intro-light-orb intro-light-orb--one"></span>
+                <span class="intro-light-orb intro-light-orb--two"></span>
+              </div>
+              <div class="intro-scene-coordinate" aria-hidden="true"><span>WB / STUDIO</span><span>33.6844° N</span></div>
+              <figure class="intro-avatar-plane">
+                <div class="intro-avatar-frame">
+                  <img src="/assets/portrait-800.webp" srcset="/assets/portrait-480.webp 480w, /assets/portrait-800.webp 800w" sizes="(max-width: 640px) 45vw, 240px" width="800" height="1200" alt="Portrait of Waleed Bangash wearing a dark suit and glasses." decoding="async" />
+                  <span class="intro-avatar-reflection" aria-hidden="true"></span>
+                </div>
+                <figcaption><span>{{DISPLAY_NAME}}</span><span>FRONTEND / FULL-STACK</span></figcaption>
+              </figure>
+              <div class="intro-glass-chip intro-glass-chip--top" aria-hidden="true"><span class="intro-chip-pulse"></span><span>PERSONAL INTRODUCTION</span></div>
+              <div class="intro-glass-chip intro-glass-chip--side" aria-hidden="true"><small>CRAFT / 2026</small><strong>BUILT WITH INTENT</strong></div>
+              <div class="intro-lower-third">
+                <p class="intro-scene-kicker" id="intro-scene-kicker">THE PERSON BEHIND THE PIXELS</p>
+                <h2 class="intro-scene-title" id="intro-scene-title">A thoughtful approach to the web.</h2>
+                <p class="intro-scene-caption" id="intro-scene-caption" aria-live="polite" aria-atomic="true">A single talking-avatar video keeps the voice, facial movement, and gestures together.</p>
+                <div class="intro-scene-foot">
+                  <span class="intro-audio-meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="intro-status" id="intro-status" role="status">READY WHEN YOU ARE</span>
+                  <span class="intro-scene-index" id="intro-scene-index" aria-hidden="true">00 / 04</span>
+                </div>
+                <div class="intro-progress-track" id="intro-progress-track" role="progressbar" aria-label="Introduction progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="intro-progress"></span></div>
+              </div>
+              <button class="intro-stop-button" id="stop-intro" type="button" hidden>Stop introduction</button>
+              <span class="intro-scene-grain" aria-hidden="true"></span>
+            </div>
             <div class="visual-index" aria-hidden="true"><span>WB</span><span>SCROLL TO EXPLORE ↓</span></div>
           </div>
         </div>
@@ -83,7 +126,7 @@
       </section>
 
       <section class="chapter work-section" id="work" aria-labelledby="work-title" data-chapter="work">
-        <div class="section-heading content-wrap">
+        <div class="section-heading content-wrap" data-reveal>
           <div>
             <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> A few things to explore</p>
             <h2 id="work-title">Selected <em>work.</em></h2>
@@ -93,7 +136,7 @@
         <div class="project-list content-wrap">
           {{PROJECTS_HTML}}
         </div>
-        <div class="work-footer content-wrap"><span>SELECTED WORK / {{PROJECT_COUNT}}</span><span>Project status is stated plainly. No made-up outcomes.</span></div>
+        <div class="work-footer content-wrap" data-reveal><span>SELECTED WORK / {{PROJECT_COUNT}}</span><span>Project status is stated plainly. No made-up outcomes.</span></div>
       </section>
 
       <section class="chapter capability-section" id="capabilities" aria-labelledby="capabilities-title" data-chapter="capabilities">
@@ -185,6 +228,6 @@
       <div class="content-wrap footer-meta" data-reveal><span>© {{YEAR}} {{DISPLAY_NAME}}</span><span>FRONTEND / FULL-STACK / INTERACTION</span><span>Built for the open web.</span></div>
     </footer>
 
-    <noscript><p class="noscript-note">The page content and contact links remain available without JavaScript. The 3D stage and scroll-linked depth require a modern browser with JavaScript enabled.</p></noscript>
+    <noscript><p class="noscript-note">The page content and contact links remain available without JavaScript. The interactive introduction, spoken narration, and scroll-linked depth require JavaScript; the introduction copy remains visible as captions.</p></noscript>
   </body>
 </html>

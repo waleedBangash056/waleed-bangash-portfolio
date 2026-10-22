@@ -6,4 +6,4 @@
 4. **Café Aroma demo:** Confirm the supplied destination and that the menu/visit content is still the intended demonstration.
 5. **Cowboy Burger demo:** Confirm the supplied demo URL is active and that the public GitHub repository remains the correct source destination.
 
-6. **Smash & Sizzle preview image:** the portfolio uses an original editorial cover artwork for this card rather than a screenshot of the deployed page. Replace it with a real, current screenshot when one can be captured.
+6. **Talking-avatar video:** approve the final rendered video of your likeness and voice before publishing it in a public repository. See `docs/TALKING-AVATAR-GENERATION.md` for the recommended process and prompt.

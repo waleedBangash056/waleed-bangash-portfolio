@@ -2,7 +2,7 @@
   "name": "waleed-bangash-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "An art-directed portfolio with a persistent scroll-driven sculpture layer, selective glass materials, and accessible depth interactions.",
+  "description": "A static developer portfolio with a transparent talking avatar, a 3D-inspired studio, scroll-driven crystal artwork, and accessible motion.",
   "type": "module",
   "scripts": {
     "dev": "node tools/serve.mjs --build",
